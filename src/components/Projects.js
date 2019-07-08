@@ -17,7 +17,7 @@ const Header = () => {
           reprehenderit voluptate officia. Deserunt adipisicing laboris veniam.
         </p>
         <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+          <Button marginTop="1rem">View Project</Button>
         </Link>
       </div>
     </ProjectWrapper>
@@ -28,11 +28,14 @@ export default Header
 
 const ProjectWrapper = styled.div`
   max-width: 1280px;
-  margin: -120px auto 0 auto;
+  /* margin: -120px auto 0 auto;
   padding: 60px;
   display: grid;
   grid-template-columns: 65% repeat(1, 1fr);
-  grid-column-gap: 40px;
+  grid-column-gap: 40px; */
+  margin-top: -50px;
+  padding-left: 5%;
+  padding-right: 5%;
   .gif {
     img {
       /* margin-top: -120px; */
@@ -49,10 +52,19 @@ const ProjectWrapper = styled.div`
     justify-content: start;
     align-self: center;
     h2 {
-      margin: 0;
+      margin: 0 0 1rem 0;
+      font-size: 36px;
+      font-weight: 600;
     }
     p {
       margin: 0;
     }
+  }
+  @media (min-width: 1000px) {
+    margin: -120px auto 0 auto;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 65% repeat(1, 1fr);
+    grid-column-gap: 40px;
   }
 `

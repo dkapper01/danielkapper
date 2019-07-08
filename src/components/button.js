@@ -6,21 +6,26 @@ const Button = props => (
 )
 
 const ButtonWrapper = styled.button`
-  display: block;
-  border: none;
-  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  min-width: 64px;
   box-sizing: border-box;
-  text-decoration: none;
-  padding: 10px 25px;
-  cursor: pointer;
+  min-height: 36px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: Inconsolata, monospace;
+  font-weight: 300;
+  line-height: 1.5;
+  border-radius: 4px;
   text-transform: uppercase;
-  letter-spacing: 2px;
 
-  background: ${props => props.props.background || "black"};
-  color: ${props => props.props.color || "rgb(255, 255, 255)"};
-  font-size: ${props => props.props.fontSize || "15px"};
-  font-weight: ${props => props.props.fontWeight || "600"};
-  border-radius: ${props => props.props.radius || "6px"};
+  /* background: ${props => props.props.background || "opacity:1;"}; */
+  /* color: ${props => props.props.color || "rgba(0, 0, 0, 0.87)"}; */
+  /* font-size: ${props => props.props.fontSize || "15px"}; */
+  /* font-weight: ${props => props.props.fontWeight || "600"}; */
+  /* border-radius: ${props => props.props.radius || "4px"}; */
   margin-top: ${props => props.props.marginTop};
   margin-bottom: ${props => props.props.marginBottom};
 
