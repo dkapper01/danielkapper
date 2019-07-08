@@ -3,14 +3,16 @@ import styled from "styled-components"
 import Website from "../gifs/titansearch.gif"
 import Button from "./button"
 import { Link } from "gatsby"
+// import Section from "../utils/Section"
 
 const Header = () => {
   return (
     <ProjectWrapper>
+      {/* <Section> */}
       <div className="info">
         <h2>TitanSearch</h2>
         <p>
-          Non esse minim dolore Lorem laborum. Lorem irure nulla amet commodo ad
+          Non esse minim dolore Lorem laborum. Lorem irure nulla amen commodo ad
           reprehenderit voluptate officia. Deserunt adipisicing laboris veniam.
         </p>
         <Link to="/blog/">
@@ -20,6 +22,7 @@ const Header = () => {
       <div className="gif">
         <img src={Website} alt="test" />
       </div>
+      {/* </Section> */}
     </ProjectWrapper>
   )
 }
@@ -28,12 +31,14 @@ export default Header
 
 const ProjectWrapper = styled.div`
   max-width: 1280px;
+
   /* margin: -120px auto 0 auto;
   padding: 60px;
   display: grid;
   grid-template-columns: 65% repeat(1, 1fr);
   grid-column-gap: 40px; */
-  margin-top: -50px;
+  /* margin-top: 150px;
+  padding-top: 100px;  */
   padding-left: 5%;
   padding-right: 5%;
   .gif {
@@ -63,7 +68,7 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (min-width: 1000px) {
-    margin: -110px auto 0 auto;
+    margin: -80px auto 30px auto;
     padding: 60px;
     display: grid;
     grid-template-columns: repeat(1, 1fr) 65%;

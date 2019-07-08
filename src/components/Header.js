@@ -8,7 +8,7 @@ const Header = () => {
       <div>
         <p>I'm Daniel</p>
         <h1>
-          I like to build <span className="cool-website">cool websites</span>{" "}
+          I like to build cool websites{" "}
           <span role="img" aria-label="hammer">
             🔨
           </span>
@@ -25,7 +25,7 @@ export default Header
 
 const HeaderWrapper = styled.div`
   background-image: linear-gradient(to bottom right, #3f51b5, #1a237e);
-  height: calc(90vh - 200px);
+  height: calc(100vh - 160px);
   padding: 60px;
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +8,7 @@ import Header from "../components/Header"
 import Projects from "../components/Projects"
 import ProjectsTwo from "../components/ProjectTwo"
 import ProjectThree from "../components/ProjectThree"
+import Toolbox from "../components/Toolbox"
 
 class IndexPage extends React.Component {
   render() {
@@ -17,13 +18,13 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Daniel Kapper"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`Daniel Kapper`, `gatsby`, `javascript`, `react`]}
         />
         <Header />
         <Projects />
         <ProjectsTwo />
         <ProjectThree />
-
+        <Toolbox />
         {/* <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link> */}

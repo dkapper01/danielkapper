@@ -27,7 +27,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-emoji-favicon",
       options: {
-        emoji: "👷",
+        emoji: "👷🏻",
       },
     },
     {
