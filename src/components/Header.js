@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { FiLinkedin, FiGithub, FiTwitter, FiInstagram } from "react-icons/fi"
 
 const Header = () => {
   return (
@@ -12,6 +13,9 @@ const Header = () => {
             🔨
           </span>
         </h1>
+        <div className="icons">
+          <FiLinkedin /> <FiGithub /> <FiTwitter /> <FiInstagram />
+        </div>
       </div>
     </HeaderWrapper>
   )
@@ -26,11 +30,26 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   color: white;
+  .icons {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    word-spacing: 5px;
+    display: flex; 
+    background-color: white; 
+    justify-content: space-around; 
+    padding: 5px; 
+    width: 180px; 
+    color: black; 
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
+      rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
+      rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
+    border-radius: 4px;
+  }
   a {
     text-decoration: none;
   }
   p {
-    margin: 0;
+    margin-bottom: 0.4rem;
     font-size: 1rem;
     font-weight: lighter;
     color: white;
@@ -39,23 +58,11 @@ const HeaderWrapper = styled.div`
     margin: 0;
     font-size: 4rem;
     font-weight: 800;
-    padding: 10px; 
-    background-color: white; 
+    padding: 10px;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
-        rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
-        rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
-      border-radius: 4px;
-
-    /* color: white; */
-    /* background-image: linear-gradient(
-      to right top,
-      #ffffff,
-      #f3f2fd,
-      #e6e5fc,
-      #d8d9fb,
-      #c9cdfa
-    ); */
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+      rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
+      rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
+    border-radius: 4px;
   }
 `

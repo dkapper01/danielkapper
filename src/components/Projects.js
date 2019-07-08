@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Website from "../../content/assets/test.gif"
+import Website from "../gifs/kodluyoruz.gif"
 import Button from "./button"
 import { Link } from "gatsby"
 
@@ -61,7 +61,7 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (min-width: 1000px) {
-    margin: -120px auto 0 auto;
+    margin: -110px auto 0 auto;
     padding: 60px;
     display: grid;
     grid-template-columns: 65% repeat(1, 1fr);
