@@ -8,7 +8,7 @@ const Header = () => {
       <div>
         <p>I'm Daniel</p>
         <h1>
-          I like to build cool websites{" "}
+          I like to build <span className="cool-website">cool websites</span>{" "}
           <span role="img" aria-label="hammer">
             🔨
           </span>
@@ -34,12 +34,12 @@ const HeaderWrapper = styled.div`
     margin-top: 0.5rem;
     font-size: 1.5rem;
     word-spacing: 5px;
-    display: flex; 
-    background-color: white; 
-    justify-content: space-around; 
-    padding: 5px; 
-    width: 180px; 
-    color: black; 
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding: 5px;
+    width: 180px;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
       rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
       rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
@@ -56,7 +56,7 @@ const HeaderWrapper = styled.div`
   }
   h1 {
     margin: 0;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     padding: 10px;
     background-color: white;
@@ -64,5 +64,8 @@ const HeaderWrapper = styled.div`
       rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
       rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
     border-radius: 4px;
+  }
+  .cool-website {
+    /* text-decoration: underline; */
   }
 `
