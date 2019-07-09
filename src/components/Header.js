@@ -13,6 +13,10 @@ const Header = () => {
             🔨
           </span>
         </h1>
+        {/* <p>
+          That create fast and secure sites and dynamic apps with JavaScript,
+          APIs, and prerendered Markup, served without web servers.
+        </p> */}
         <div className="icons">
           <FiLinkedin /> <FiGithub /> <FiTwitter /> <FiInstagram />
         </div>
@@ -53,6 +57,15 @@ const HeaderWrapper = styled.div`
     font-size: 1rem;
     font-weight: lighter;
     color: white;
+    width: 140px; 
+
+    /* margin-top: 10px;  */
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
+      rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
+      rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
+    border-radius: 4px;
   }
   h1 {
     margin: 0;

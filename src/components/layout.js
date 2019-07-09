@@ -72,11 +72,12 @@ class Layout extends React.Component {
           alt="website"
         /> */}
         {/* </div> */}
-        {/* <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </Footer> */}
+        <Footer>
+          <h1>Let's get in touch</h1>
+          <p>Want to get in touch? Send me an email at dkapper01@gmail.com.</p>
+          <h1>👷🏻</h1>
+          <p>© {new Date().getFullYear()} Daniel Kapper</p>
+        </Footer>
       </Wrapper>
     )
   }
@@ -87,6 +88,7 @@ const Wrapper = styled.div`
 `
 
 const Footer = styled.footer`
+  border-top: 1px solid gray; 
   text-align: center;
   margin: 24px;
 `
