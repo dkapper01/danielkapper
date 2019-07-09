@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-remark-reading-time`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

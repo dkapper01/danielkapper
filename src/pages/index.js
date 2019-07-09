@@ -9,6 +9,7 @@ import Projects from "../components/Projects"
 import ProjectsTwo from "../components/ProjectTwo"
 import ProjectThree from "../components/ProjectThree"
 import Toolbox from "../components/Toolbox"
+import BlogList from "../components/BlogList"
 
 class IndexPage extends React.Component {
   render() {
@@ -24,7 +25,9 @@ class IndexPage extends React.Component {
         <Projects />
         <ProjectsTwo />
         <ProjectThree />
+        <BlogList />
         <Toolbox />
+
         {/* <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link> */}
