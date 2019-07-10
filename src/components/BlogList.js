@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
+import styled from "styled-components"
 
 export default function BlogList() {
   return (
@@ -31,28 +32,49 @@ export default function BlogList() {
       render={data => {
         const posts = data.allMarkdownRemark.edges
         return (
-          <header>
+          <BlogListWrapper>
+            <h1>
+              Reading material{" "}
+              <span role="img" aria-label="hammer">
+                🔥
+              </span>
+            </h1>
             {posts.map(({ node }) => {
               return (
                 <div>
                   <Link
-                    style={{ boxShadow: `none` }}
+                    style={{ boxShadow: `none`, textDecoration: `underline` }}
                     to={`blog${node.fields.slug}`}
                   >
-                    {" "}
                     <h2>{node.frontmatter.title}</h2>
                   </Link>
 
-                  <p>
+                  <p style={{ color: `black`, marginTop: `-15px` }}>
                     {node.frontmatter.date} {node.fields.readingTime.text}
                   </p>
                   <p>{node.excerpt}</p>
                 </div>
               )
             })}
-          </header>
+          </BlogListWrapper>
         )
       }}
     />
   )
 }
+
+const BlogListWrapper = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 60px;
+  border-top: 1px solid gray;
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    color: #3f51b5;
+  }
+  p {
+    margin: 0;
+  }
+`

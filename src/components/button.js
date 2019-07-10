@@ -12,9 +12,9 @@ const ButtonWrapper = styled.button`
   min-width: 64px;
   box-sizing: border-box;
   min-height: 36px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
   font-family: Inconsolata, monospace;
   font-weight: 300;
   line-height: 1.5;

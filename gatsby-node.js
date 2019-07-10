@@ -47,7 +47,15 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: `projects${node.fields.slug}`,
+        component: path.resolve("./src/templates/single-project.js"),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    })
     return null
   })
 }

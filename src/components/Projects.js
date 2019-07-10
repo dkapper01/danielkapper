@@ -16,7 +16,7 @@ const Header = () => {
           Non esse minim dolore Lorem laborum. Lorem irure nulla amet commodo ad
           reprehenderit voluptate officia. Deserunt adipisicing laboris veniam.
         </p>
-        <Link to="/blog/">
+        <Link to="/projects/kodluyoruz">
           <Button marginTop="1rem">View Project</Button>
         </Link>
       </div>
