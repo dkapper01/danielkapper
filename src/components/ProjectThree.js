@@ -1,15 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-import Website from "../gifs/kappernator.gif"
+import Pic from "../gifs/kappernator.gif"
 import Button from "./button"
+import Image from "../utils/Image"
 import { Link } from "gatsby"
 
 const Header = () => {
   return (
     <ProjectWrapper>
-      <div className="gif">
-        <img src={Website} alt="test" />
-      </div>
+      <Image img={Pic} />
       <div className="info">
         <h2>Kappernator</h2>
         <p>
@@ -36,15 +35,6 @@ const ProjectWrapper = styled.div`
   /* margin-top: -50px; */
   padding-left: 5%;
   padding-right: 5%;
-  .gif {
-    img {
-      width: 100%;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
-        rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
-        rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
-      border-radius: 4px;
-    }
-  }
   .info {
     display: flex;
     flex-direction: column;
@@ -62,7 +52,7 @@ const ProjectWrapper = styled.div`
   @media (min-width: 1000px) {
     /* margin: -110px auto 0 auto; */
     margin: 0;
-    padding: 60px;
+    /* padding: 60px; */
     display: grid;
     grid-template-columns: 65% repeat(1, 1fr);
     grid-column-gap: 40px;
