@@ -16,7 +16,7 @@ const Header = () => {
           Non esse minim dolore Lorem laborum. Lorem irure nulla amet commodo ad
           reprehenderit voluptate officia. Deserunt adipisicing laboris veniam.
         </p>
-        <Link to="/blog/">
+        <Link to="/projects/kappernator/">
           <Button marginTop="1rem">View Project</Button>
         </Link>
       </div>
@@ -33,7 +33,7 @@ const ProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: 65% repeat(1, 1fr);
   grid-column-gap: 40px; */
-  margin-top: -50px;
+  /* margin-top: -50px; */
   padding-left: 5%;
   padding-right: 5%;
   .gif {

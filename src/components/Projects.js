@@ -33,9 +33,11 @@ const ProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: 65% repeat(1, 1fr);
   grid-column-gap: 40px; */
-  margin-top: -50px;
+  /* margin-top: -50px; */
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 0; 
+  padding-bottom: 0; 
   .gif {
     img {
       /* margin-top: -120px; */
@@ -61,8 +63,8 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (min-width: 1000px) {
-    margin: -110px auto 0 auto;
-    padding: 60px;
+    margin: 0 auto 0 auto;
+    /* padding: 60px; */
     display: grid;
     grid-template-columns: 65% repeat(1, 1fr);
     grid-column-gap: 40px;

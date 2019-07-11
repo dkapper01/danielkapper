@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 import Banner from "../utils/Banner"
+import styled from "styled-components"
 // import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -22,7 +23,8 @@ class BlogPostTemplate extends React.Component {
         <Header>
           <Banner title={post.frontmatter.title} subtitle="" />
         </Header>
-        {/* <p
+        <ProjectWrapper>
+          {/* <p
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -30,16 +32,16 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         > */}
-        {/* {post.frontmatter.date}
+          {/* {post.frontmatter.date}
         </p> */}
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        {/* <hr
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          {/* <hr
           style={{
             marginBottom: rhythm(1),
           }}
         /> */}
 
-        {/* <ul
+          {/* <ul
           style={{
             display: `flex`,
             flexWrap: `wrap`,
@@ -63,12 +65,22 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul> */}
+        </ProjectWrapper>
       </Layout>
     )
   }
 }
 
 export default BlogPostTemplate
+
+const ProjectWrapper = styled.div`
+  margin: 0 auto;
+  width: 960px;
+  .gatsby-resp-image-image {
+    margin-top: -450px;
+    z-index: 100;
+  }
+`
 
 export const pageQuery = graphql`
   query BlogPostBySlugs($slug: String!) {

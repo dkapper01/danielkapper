@@ -12,6 +12,7 @@ const HeaderWrapper = styled.div`
   height: ${props => (props.home ? "calc(100vh - 160px)" : "40vh")};
 
   /* height: calc(100vh - 160px); */
+  margin-bottom: -50px; 
   padding: 60px;
   display: grid;
   /* grid-template-rows: 100px 100px 100px; */

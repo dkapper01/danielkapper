@@ -15,7 +15,7 @@ const Header = () => {
           Non esse minim dolore Lorem laborum. Lorem irure nulla amen commodo ad
           reprehenderit voluptate officia. Deserunt adipisicing laboris veniam.
         </p>
-        <Link to="/blog/">
+        <Link to="/projects/titansearch/">
           <Button marginTop="1rem">View Project</Button>
         </Link>
       </div>
@@ -69,6 +69,8 @@ const ProjectWrapper = styled.div`
   }
   @media (min-width: 1000px) {
     margin: -80px auto 30px auto;
+    margin: 0 auto 30px auto;
+
     padding: 60px;
     display: grid;
     grid-template-columns: repeat(1, 1fr) 65%;
