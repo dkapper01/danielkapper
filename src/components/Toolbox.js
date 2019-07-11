@@ -47,6 +47,7 @@ const ProjectWrapper = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   border-top: 1px solid gray;
+  padding: 0 5%;
 
   img {
     width: 120px;
@@ -67,11 +68,9 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (min-width: 1000px) {
-    /* margin: -80px auto 30px auto; */
-    padding: 0 60px;
+    padding: 80px 60px;
     display: grid;
     grid-template-columns: 40% 1fr;
     grid-column-gap: 40px;
-    /* grid-column-gap: 40px; */
   }
 `
