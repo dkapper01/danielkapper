@@ -3,12 +3,10 @@ import styled from "styled-components"
 import Website from "../gifs/titansearch.gif"
 import Button from "./button"
 import { Link } from "gatsby"
-// import Section from "../utils/Section"
 
 const Header = () => {
   return (
     <ProjectWrapper>
-      {/* <Section> */}
       <div className="info">
         <h2>TitanSearch</h2>
         <p>
@@ -22,7 +20,6 @@ const Header = () => {
       <div className="gif">
         <img src={Website} alt="test" />
       </div>
-      {/* </Section> */}
     </ProjectWrapper>
   )
 }
@@ -43,7 +40,6 @@ const ProjectWrapper = styled.div`
   padding-right: 5%;
   .gif {
     img {
-      /* margin-top: -120px; */
       width: 100%;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
         rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
@@ -68,10 +64,9 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (min-width: 1000px) {
-    margin: -80px auto 30px auto;
-    margin: 0 auto 30px auto;
-
-    padding: 60px;
+    /* margin: 0 auto 30px auto; */
+    margin: 0;
+    padding: 60px 60px 0 60px;
     display: grid;
     grid-template-columns: repeat(1, 1fr) 65%;
     grid-column-gap: 40px;

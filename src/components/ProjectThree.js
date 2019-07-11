@@ -38,7 +38,6 @@ const ProjectWrapper = styled.div`
   padding-right: 5%;
   .gif {
     img {
-      /* margin-top: -120px; */
       width: 100%;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
         rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
@@ -61,7 +60,8 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (min-width: 1000px) {
-    margin: -110px auto 0 auto;
+    /* margin: -110px auto 0 auto; */
+    margin: 0;
     padding: 60px;
     display: grid;
     grid-template-columns: 65% repeat(1, 1fr);
