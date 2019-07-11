@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { FiLinkedin, FiGithub, FiTwitter, FiInstagram } from "react-icons/fi"
+import Icons from "../components/landingPage/Icons"
 
 const Header = () => {
   return (
@@ -9,17 +9,15 @@ const Header = () => {
         <p>I'm Daniel</p>
         <h1>
           I like to build cool websites{" "}
-          <span role="img" aria-label="hammer">
+          {/* <span role="img" aria-label="hammer">
             🔨
-          </span>
+          </span> */}
         </h1>
         {/* <p>
           That create fast and secure sites and dynamic apps with JavaScript,
           APIs, and prerendered Markup, served without web servers.
         </p> */}
-        <div className="icons">
-          <FiLinkedin /> <FiGithub /> <FiTwitter /> <FiInstagram />
-        </div>
+        <Icons />
       </div>
     </HeaderWrapper>
   )
@@ -39,15 +37,16 @@ const HeaderWrapper = styled.div`
     font-size: 1.5rem;
     word-spacing: 5px;
     display: flex;
-    background-color: white;
     justify-content: space-around;
     padding: 5px;
     width: 180px;
-    color: black;
+    color: white;
+    /* background-color: white; */
+    /* color: black;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
       rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
       rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
-    border-radius: 4px;
+    border-radius: 4px; */
   }
   a {
     text-decoration: none;
@@ -57,26 +56,27 @@ const HeaderWrapper = styled.div`
     font-size: 1rem;
     font-weight: lighter;
     color: white;
-    width: 140px; 
+    width: 140px;
 
     /* margin-top: 10px;  */
-    background-color: white;
+    /* background-color: white;
     color: black;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
       rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
       rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
-    border-radius: 4px;
+    border-radius: 4px; */
   }
   h1 {
     margin: 0;
     font-size: 3.5rem;
     font-weight: 800;
     padding: 10px;
-    background-color: white;
+    color: white;
+    /* background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 6px -3px,
       rgba(0, 0, 0, 0.14) 0px 10px 14px 1px,
       rgba(0, 0, 0, 0.12) 0px 4px 18px 3px;
-    border-radius: 4px;
+    border-radius: 4px; */
   }
   .cool-website {
     /* text-decoration: underline; */
