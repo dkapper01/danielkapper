@@ -24,7 +24,6 @@ class BlogPostTemplate extends React.Component {
           <Banner title={post.frontmatter.title} subtitle="" />
         </Header>
         <ProjectWrapper>
-          
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </ProjectWrapper>
       </Layout>
