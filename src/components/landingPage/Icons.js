@@ -44,7 +44,6 @@ export default class Icons extends Component {
 const IconWrapper = styled.div`
   margin-top: 0.5rem;
   font-size: 1.8rem;
-  /* word-spacing: 5px; */
   display: flex;
   justify-content: space-between;
   padding: 0;
