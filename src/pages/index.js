@@ -10,6 +10,8 @@ import ProjectsTwo from "../components/ProjectTwo"
 import ProjectThree from "../components/ProjectThree"
 import Toolbox from "../components/Toolbox"
 import BlogList from "../components/BlogList"
+import Banner from "../utils/Banner"
+import Icons from "../components/landingPage/Icons"
 
 class IndexPage extends React.Component {
   render() {
@@ -21,7 +23,15 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`Daniel Kapper`, `gatsby`, `javascript`, `react`]}
         />
-        <Header />
+        <Header home="true">
+          <p>I'm Daniel</p>
+          <Banner
+            title="I like to build cool websites"
+            subtitle="That create fast and secure sites and dynamic apps with JavaScript,
+          APIs, and prerendered Markup, served without web servers."
+          />
+          <Icons />
+        </Header>
         <Projects />
         <ProjectsTwo />
         <ProjectThree />

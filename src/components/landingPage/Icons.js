@@ -32,7 +32,12 @@ export default class Icons extends Component {
       <IconWrapper>
         {this.state.icons.map(item => {
           return (
-            <a href={item.path} key={item.id} target="_blank">
+            <a
+              href={item.path}
+              key={item.id}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {item.icon}
             </a>
           )
@@ -43,6 +48,7 @@ export default class Icons extends Component {
 }
 const IconWrapper = styled.div`
   margin-top: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   font-size: 1.8rem;
   display: flex;
   justify-content: space-between;

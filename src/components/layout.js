@@ -65,17 +65,14 @@ class Layout extends React.Component {
         > */}
         <header>{header}</header>
         <main>{children}</main>
-        {/* <img
-          src="../components/gify.gif"
-          width="300"
-          height="300"
-          alt="website"
-        /> */}
-        {/* </div> */}
         <Footer>
           <h1>Let's get in touch</h1>
           <p>Want to get in touch? Send me an email at dkapper01@gmail.com.</p>
-          <h1>👷🏻</h1>
+          <h1> 
+            <span role="img" aria-label="hammer">
+👷</span>
+</h1>
+
           <p>© {new Date().getFullYear()} Daniel Kapper</p>
         </Footer>
       </Wrapper>
