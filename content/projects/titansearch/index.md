@@ -1,6 +1,7 @@
 ---
 title: TitanSearch
 date: "2019-05-01T22:12:03.284Z"
+type: project
 ---
 
 ![titansearch by Daniel Kapper](./titansearch.png)

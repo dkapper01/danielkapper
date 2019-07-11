@@ -1,6 +1,7 @@
 ---
 title: Kappernator
 date: "2019-05-01T22:12:03.284Z"
+type: project
 ---
 ![kappernator by Daniel Kapper](./kappernator.png)
 
