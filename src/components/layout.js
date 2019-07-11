@@ -31,7 +31,7 @@ const Wrapper = styled.div`
 `
 
 const Footer = styled.footer`
-  border-top: 1px solid gray;
+  border-top: 1px solid lightgray;
   text-align: center;
   padding: 60px 0 60px 0;
   margin: 0;

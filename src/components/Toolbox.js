@@ -46,7 +46,7 @@ export default Header
 const ProjectWrapper = styled.div`
   max-width: 1280px;
   margin: 0 auto;
-  border-top: 1px solid gray;
+  border-top: 1px solid lightgray;
   padding: 0 5%;
 
   img {

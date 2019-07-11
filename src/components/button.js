@@ -20,6 +20,7 @@ const ButtonWrapper = styled.button`
   line-height: 1.5;
   border-radius: 4px;
   text-transform: uppercase;
+  cursor: pointer;
 
   /* background: ${props => props.props.background || "opacity:1;"}; */
   /* color: ${props => props.props.color || "rgba(0, 0, 0, 0.87)"}; */
@@ -31,6 +32,7 @@ const ButtonWrapper = styled.button`
 
   &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+    background-color: lightgray; 
   }
 `
 

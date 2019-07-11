@@ -68,7 +68,7 @@ const BlogListWrapper = styled.div`
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 60px;
-  border-top: 1px solid gray;
+  border-top: 1px solid lightgray;
   h1 {
     text-align: center;
   }
