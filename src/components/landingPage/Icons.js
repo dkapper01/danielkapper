@@ -32,7 +32,7 @@ export default class Icons extends Component {
       <IconWrapper>
         {this.state.icons.map(item => {
           return (
-            <a href="item.path" key={item.id} target="_blank">
+            <a href={item.path} key={item.id} target="_blank">
               {item.icon}
             </a>
           )
