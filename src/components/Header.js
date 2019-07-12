@@ -8,14 +8,16 @@ const Header = ({ children, home }) => {
 export default Header
 
 const HeaderWrapper = styled.div`
+  max-width: 100%;
   background-image: linear-gradient(to bottom right, #3f51b5, #1a237e);
   height: ${props => (props.home ? "calc(100vh - 160px)" : "40vh")};
-  margin-bottom: -50px;
   padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
+  margin: 0 auto -50px auto;
+
   p {
     color: white;
     margin: 0;

@@ -24,13 +24,14 @@ class IndexPage extends React.Component {
           keywords={[`Daniel Kapper`, `gatsby`, `javascript`, `react`]}
         />
         <Header home="true">
-          <p>I'm Daniel</p>
           <Banner
+            name="I'm Daniel"
             title="I like to build cool websites"
             subtitle="That create fast and secure sites and dynamic apps with JavaScript,
           APIs, and prerendered Markup, served without web servers."
-          />
-          <Icons />
+          >
+            <Icons />
+          </Banner>
         </Header>
         <Projects />
         <ProjectsTwo />

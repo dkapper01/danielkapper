@@ -27,13 +27,13 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
-  max-width: 1280px;
+  max-width: 100%;
 `
 
 const Footer = styled.footer`
   border-top: 1px solid lightgray;
   text-align: center;
-  padding: 60px 0 60px 0;
+  padding: 80px 0 80px 0;
   margin: 0;
   h1 {
     margin-top: 0;

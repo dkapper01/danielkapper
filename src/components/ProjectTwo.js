@@ -27,9 +27,10 @@ const Left = styled(Section)`
   padding-right: 5%;
   display: flex;
   flex-direction: column-reverse;
+  margin: 0 auto;
   @media (min-width: 1000px) {
-    margin: 0;
-    padding: 0 60px 60px 60px;
+    margin: 0 auto;
+    padding: 0 60px 80px 60px;
     display: grid;
     grid-template-columns: repeat(1, 1fr) 65%;
     grid-column-gap: 40px;
