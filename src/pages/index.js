@@ -27,8 +27,7 @@ class IndexPage extends React.Component {
           <Banner
             name="I'm Daniel"
             title="I like to build cool websites"
-            subtitle="that create fast and secure sites and dynamic apps with JavaScript,
-          APIs, and prerendered Markup, sometimes served without a web servers. #JAMstack"
+            subtitle="that are fast, secure and dynamic with JavaScript, APIs, and prerendered Markup, sometimes served without a web server. #JAMstack"
           >
             <Icons />
           </Banner>
