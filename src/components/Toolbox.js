@@ -14,14 +14,15 @@ const Header = () => {
     <ProjectWrapper>
       <div>
         <h2>
-          A few tools I use{" "}
+          Things I use{" "}
           <span role="img" aria-label="hammer">
             🧰
           </span>
         </h2>
         <p>
-          Non esse minim dolore Lorem laborum. Lorem irure nulla amet commodo ad
-          reprehenderit voluptate officia. Deserunt adipisicing laboris veniam.
+          I tend to turn to these tools first but use whatever tech needed to
+          get the job done. I really enjoy using JavaScript and many of its
+          frameworks. 
         </p>
       </div>
       <div className="logos">
