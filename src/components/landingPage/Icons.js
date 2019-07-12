@@ -31,11 +31,6 @@ export default class Icons extends Component {
         icon: <FiInstagram />,
         path: `https://www.instagram.com/dkapper01/`,
       },
-      {
-        id: 5,
-        icon: <FiFileText />,
-        path: `https://danielkapper.com/daniel_kapper_resume.pdf`,
-      },
     ],
   }
   render() {
@@ -53,6 +48,9 @@ export default class Icons extends Component {
             </a>
           )
         })}
+        <a href="daniel_kapper_resume.pdf" target="_blink">
+          <FiFileText />
+        </a>
       </IconWrapper>
     )
   }
