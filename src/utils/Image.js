@@ -1,9 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-// import Pic from "../gifs/kodluyoruz.gif"
 
 const Image = ({ img }) => {
-  // console.log(Pic)
   return <ImageWrapper src={img} />
 }
 
