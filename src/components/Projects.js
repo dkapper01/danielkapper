@@ -10,7 +10,7 @@ const ProjectTwo = () => {
       <Image img={Pic} />
 
       <Info
-        project="kodluyoruz"
+        project="Kodluyoruz"
         details="SNon esse minim dolore Lorem laborum. Lorem irure nulla amen commodo ad
           reprehenderit voluptate officia. Deserunt adipisicing laboris veniam."
         slug="kodluyoruz"
