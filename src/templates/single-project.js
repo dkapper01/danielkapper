@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
         <ProjectWrapper>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <a href={post.frontmatter.url} target="_blank">
-            <Button marginBottom="2rem">{post.frontmatter.title}.com</Button>
+            <Button marginBottom="2rem">{post.frontmatter.title}.com →</Button>
           </a>
         </ProjectWrapper>
       </Layout>
