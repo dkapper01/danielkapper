@@ -1,8 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-// import Button from "./button"
-// import { Link } from "gatsby"
-// import Section from "../utils/Section"
 import GraphqlLogo from "../logos/graphql.svg"
 import styledComponents from "../logos/styled.svg"
 import GatsbyLogo from "../logos/gatsby.svg"

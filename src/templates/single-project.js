@@ -1,11 +1,13 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 import Banner from "../utils/Banner"
 import styled from "styled-components"
+import Button from "../components/button"
+
 // import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -25,6 +27,9 @@ class BlogPostTemplate extends React.Component {
         </Header>
         <ProjectWrapper>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <a href={post.frontmatter.url} target="_blank">
+            <Button marginBottom="2rem">{post.frontmatter.title}.com</Button>
+          </a>
         </ProjectWrapper>
       </Layout>
     )
@@ -36,6 +41,9 @@ export default BlogPostTemplate
 const ProjectWrapper = styled.div`
   margin: 0 auto;
   width: 960px;
+  li {
+    margin: 0;
+  }
 `
 
 export const pageQuery = graphql`
@@ -54,6 +62,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        url
       }
     }
   }
