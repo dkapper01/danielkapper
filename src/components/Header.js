@@ -12,7 +12,10 @@ const HeaderWrapper = styled.div`
   height: ${props => (props.home ? "calc(100vh - 160px)" : "40vh")};
   margin-bottom: -50px;
   padding: 60px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
   p {
     color: white;
     margin: 0;

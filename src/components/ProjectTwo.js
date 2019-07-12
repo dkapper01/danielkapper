@@ -25,7 +25,8 @@ const Left = styled(Section)`
   max-width: 1280px;
   padding-left: 5%;
   padding-right: 5%;
-  display: grid; 
+  display: flex;
+  flex-direction: column-reverse;
   @media (min-width: 1000px) {
     margin: 0;
     padding: 0 60px 60px 60px;

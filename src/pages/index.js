@@ -9,7 +9,7 @@ import Projects from "../components/Projects"
 import ProjectsTwo from "../components/ProjectTwo"
 import ProjectThree from "../components/ProjectThree"
 import Toolbox from "../components/Toolbox"
-import BlogList from "../components/BlogList"
+// import BlogList from "../components/BlogList"
 import Banner from "../utils/Banner"
 import Icons from "../components/landingPage/Icons"
 
