@@ -40,7 +40,7 @@ export default BlogPostTemplate
 
 const ProjectWrapper = styled.div`
   margin: 0 auto;
-  width: 960px;
+  width: 760px;
   li {
     margin: 0;
   }
