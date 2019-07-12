@@ -28,14 +28,18 @@ const Header = () => {
         </p>
       </div>
       <div className="logos">
-        <img src={GatsbyLogo} />
-        <img src={ReactLogo} />
-        <img className="graphql" src={styledComponents} />
-        <img src={Contentful} />
-        <img className="graphql" src={JavascriptLogo} />
-        <img src={NodeLogo} />
-        <img src={Netlify} />
-        <img className="graphql" src={GraphqlLogo} />
+        <img src={GatsbyLogo} alt="gatsby" />
+        <img src={ReactLogo} alt="react" />
+        <img
+          className="graphql"
+          src={styledComponents}
+          alt="styled-components"
+        />
+        <img src={Contentful} alt="contentful" />
+        <img className="graphql" src={JavascriptLogo} alt="javascript" />
+        <img src={NodeLogo} alt="node" />
+        <img src={Netlify} alt="netlify" />
+        <img className="graphql" src={GraphqlLogo} alt="graphql" />
       </div>
     </ProjectWrapper>
   )
