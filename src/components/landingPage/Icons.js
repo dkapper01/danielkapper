@@ -1,6 +1,12 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { FiLinkedin, FiGithub, FiTwitter, FiInstagram } from "react-icons/fi"
+import {
+  FiLinkedin,
+  FiGithub,
+  FiTwitter,
+  FiInstagram,
+  FiFileText,
+} from "react-icons/fi"
 
 export default class Icons extends Component {
   state = {
@@ -24,6 +30,11 @@ export default class Icons extends Component {
         id: 4,
         icon: <FiInstagram />,
         path: `https://www.instagram.com/dkapper01/`,
+      },
+      {
+        id: 5,
+        icon: <FiFileText />,
+        path: `https://danielkapper.com/daniel_kapper_resume.pdf`,
       },
     ],
   }
@@ -53,7 +64,7 @@ const IconWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0;
-  width: 180px;
+  width: 210px;
   a {
     color: white;
   }
