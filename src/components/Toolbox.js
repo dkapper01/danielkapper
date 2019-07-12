@@ -22,7 +22,7 @@ const Header = () => {
         <p>
           I tend to turn to these tools first but use whatever tech needed to
           get the job done. I really enjoy using JavaScript and many of its
-          frameworks. 
+          frameworks. Also, I'm always looking for a new skill to pick up.
         </p>
       </div>
       <div className="logos">
