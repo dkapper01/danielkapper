@@ -10,8 +10,7 @@ const ProjectTwo = () => {
     <Left>
       <Info
         project="TitanSearch"
-        details="Non esse minim dolore Lorem laborum. Lorem irure nulla amen commodo ad
-        reprehenderit voluptate officia. Deserunt adipisicing laboris veniam."
+        details="Developed a search engine with JavaScript and Google Custom Search API to solve a critical and costly business problem at TitanHouse, and designed it with Bootstrap."
         slug="titansearch"
       />
       <Image img={Pic} />

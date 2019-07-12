@@ -10,8 +10,7 @@ const ProjectThree = () => {
       <Image img={Pic} />
       <Info
         project="Kappernator"
-        details="Non esse minim dolore Lorem laborum. Lorem irure nulla amet commodo ad
-        reprehenderit voluptate officia. Deserunt adipisicing laboris veniam."
+        details="Built a data entry application for TitanHouse using Node.js, Express, Mongoose, Pug and MongoDB. It replaced the company’s reliance on Google Sheets and Forms."
         slug="kappernator"
       />
     </Section>

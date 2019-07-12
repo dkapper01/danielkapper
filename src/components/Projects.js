@@ -11,8 +11,7 @@ const ProjectTwo = () => {
 
       <Info
         project="Kodluyoruz"
-        details="SNon esse minim dolore Lorem laborum. Lorem irure nulla amen commodo ad
-          reprehenderit voluptate officia. Deserunt adipisicing laboris veniam."
+        details="Created a Progressive Web App for a client using GatsbyJS, a static site generator. I used React to build components and GraphQL to pull in data, and integrated it with Contentful a Headless CMS."
         slug="kodluyoruz"
       />
     </Section>
