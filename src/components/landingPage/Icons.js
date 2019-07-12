@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import Resume from "../../../static/daniel_kapper_resume.pdf"
 import {
   FiLinkedin,
   FiGithub,
@@ -48,7 +49,7 @@ export default class Icons extends Component {
             </a>
           )
         })}
-        <a href="daniel_kapper_resume.pdf" target="_blink">
+        <a href={Resume} target="_blink">
           <FiFileText />
         </a>
       </IconWrapper>
