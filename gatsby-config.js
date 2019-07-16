@@ -18,7 +18,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-remark-reading-time`,
     `gatsby-plugin-playground`,
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,6 +25,7 @@ module.exports = {
         name: `blog`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,6 +39,14 @@ module.exports = {
         emoji: "👷🏻",
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-143970898-1",
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -96,3 +104,20 @@ module.exports = {
     },
   ],
 }
+
+// const cfg = {
+//   plugins: [],
+//   /* the rest of your config */
+// }
+
+// if (process.env.CONTEXT === "production") {
+//   const googleAnalyticsCfg = {
+//     resolve: "gatsby-plugin-google-analytics",
+//     options: {
+//       trackingId: "UA-143970898-1",
+//     },
+//   }
+//   cfg.plugins.push(googleAnalyticsCfg)
+// }
+
+// module.exports = cfg
