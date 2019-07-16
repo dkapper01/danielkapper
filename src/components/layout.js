@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Navbar from "./navbar/Navbar"
 
 class Layout extends React.Component {
   render() {
@@ -8,6 +9,7 @@ class Layout extends React.Component {
 
     return (
       <Wrapper>
+        <Navbar />
         <header>{header}</header>
         <main>{children}</main>
         <Footer>
@@ -28,6 +30,7 @@ class Layout extends React.Component {
 const Wrapper = styled.div`
   min-height: 100vh;
   max-width: 100%;
+  position: relative; 
 `
 
 const Footer = styled.footer`

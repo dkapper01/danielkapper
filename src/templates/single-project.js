@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -27,7 +27,11 @@ class BlogPostTemplate extends React.Component {
         </Header>
         <ProjectWrapper>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <a href={post.frontmatter.url} target="_blank">
+          <a
+            href={post.frontmatter.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button marginBottom="2rem">{post.frontmatter.title}.com →</Button>
           </a>
         </ProjectWrapper>

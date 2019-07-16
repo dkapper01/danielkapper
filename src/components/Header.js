@@ -9,6 +9,8 @@ export default Header
 
 const HeaderWrapper = styled.div`
   max-width: 100%;
+  margin-top: -10px;
+  min-height: 350px;
   background-image: linear-gradient(to bottom right, #3f51b5, #1a237e);
   height: ${props => (props.home ? "calc(100vh - 160px)" : "40vh")};
   padding: 60px;

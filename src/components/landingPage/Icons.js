@@ -1,13 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import Resume from "../../../static/daniel_kapper_resume.pdf"
-import {
-  FiLinkedin,
-  FiGithub,
-  FiTwitter,
-  FiInstagram,
-  FiFileText,
-} from "react-icons/fi"
+import { FiLinkedin, FiGithub, FiTwitter, FiInstagram } from "react-icons/fi"
 
 export default class Icons extends Component {
   state = {
@@ -49,9 +42,6 @@ export default class Icons extends Component {
             </a>
           )
         })}
-        <a href={Resume} target="_blink">
-          <FiFileText />
-        </a>
       </IconWrapper>
     )
   }
@@ -62,7 +52,7 @@ const IconWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0;
-  width: 220px;
+  width: 180px;
   a {
     color: white;
   }

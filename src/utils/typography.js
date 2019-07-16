@@ -8,6 +8,10 @@ lincolnTheme.overrideThemeStyles = () => {
     },
     a: {
       backgroundImage: "none",
+      textShadow: "none",
+      color: "#fff",
+      fontWeight: 100,
+      fontFamily: "Inconsolata, monospace",
     },
     p: {
       fontFamily: "Inconsolata, monospace",

@@ -23,6 +23,7 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`Daniel Kapper`, `gatsby`, `javascript`, `react`]}
         />
+        
         <Header home="true">
           <Banner
             name="I'm Daniel"
