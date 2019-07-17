@@ -30,4 +30,8 @@ const NavbarWrapper = styled.nav`
   position: absolute;
   top: 1%;
   right: 10%;
+  a:link {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
 `
