@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Header from "../components/Header"
 import Banner from "../utils/Banner"
 import styled from "styled-components"
-import Button from "../components/button"
+import Button from "../components/elements/button"
 
 // import { rhythm, scale } from "../utils/typography"
 

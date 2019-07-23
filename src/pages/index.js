@@ -1,9 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Button from "../components/button"
 import Header from "../components/Header"
 import Projects from "../components/Projects"
 import ProjectsTwo from "../components/ProjectTwo"
@@ -23,7 +20,7 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`Daniel Kapper`, `gatsby`, `javascript`, `react`]}
         />
-        
+
         <Header home="true">
           <Banner
             name="I'm Daniel"
@@ -38,10 +35,6 @@ class IndexPage extends React.Component {
         <ProjectThree />
         {/* <BlogList /> */}
         <Toolbox />
-
-        {/* <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link> */}
       </Layout>
     )
   }

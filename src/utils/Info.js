@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Button from "../components/button"
+import Button from "../components/elements/button"
 import { Link } from "gatsby"
 
 const Info = ({ project, details, slug }) => {
@@ -9,7 +9,9 @@ const Info = ({ project, details, slug }) => {
       <h2>{project}</h2>
       <p>{details}</p>
       <Link to={`/projects/${slug}`}>
-        <Button marginTop="1rem">View Project</Button>
+        <Button type="" marginTop="1rem">
+          View Project
+        </Button>
       </Link>
     </InfoWrapper>
   )
