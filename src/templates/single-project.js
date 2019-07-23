@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,15 +7,21 @@ import Header from "../components/Header"
 import Banner from "../utils/Banner"
 import styled from "styled-components"
 import Button from "../components/elements/button"
+import test from "../../content/projects/kodluyoruz/kodluyoruz.png"
 
 // import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
+    // const { location } = this.props
+
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     // const { previous, next } = this.props.pageContext
-
+    function goBack() {
+      window.history.back()
+    }
+    // console.log(location)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -26,7 +32,8 @@ class BlogPostTemplate extends React.Component {
           <Banner title={post.frontmatter.title} subtitle="" />
         </Header>
         <ProjectWrapper>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <img src={post.frontmatter.image} />
+          {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
           <a
             href={post.frontmatter.url}
             target="_blank"
@@ -67,6 +74,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         url
+        image
       }
     }
   }
