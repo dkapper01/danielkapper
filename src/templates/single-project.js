@@ -1,13 +1,13 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 import Banner from "../utils/Banner"
 import styled from "styled-components"
 import Button from "../components/elements/button"
-import test from "../../content/projects/kodluyoruz/kodluyoruz.png"
+// import test from "../../content/projects/kodluyoruz/kodluyoruz.png"
+import Img from "gatsby-image"
 
 // import { rhythm, scale } from "../utils/typography"
 
@@ -18,22 +18,26 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     // const { previous, next } = this.props.pageContext
-    function goBack() {
-      window.history.back()
-    }
+    // function goBack() {
+    //   window.history.back()
+    // }
     // console.log(location)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          // description={post.frontmatter.description || post.excerpt}
         />
         <Header>
           <Banner title={post.frontmatter.title} subtitle="" />
         </Header>
         <ProjectWrapper>
-          <img src={post.frontmatter.image} />
-          {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
+          <Img
+            fluid={post.frontmatter.picture.childImageSharp.fluid}
+            alt="project"
+            style={{ marginBottom: "2.5rem" }}
+          />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <a
             href={post.frontmatter.url}
             target="_blank"
@@ -66,15 +70,19 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
+      excerpt
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
         url
-        image
+        picture {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

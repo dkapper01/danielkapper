@@ -32,11 +32,13 @@ exports.createPages = ({ graphql, actions }) => {
 
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
+    // console.log(posts)
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
-
+      // console.log(previous)
+      // console.log(next)
       createPage({
         path: `blog${post.node.fields.slug}`,
         component: blogPost,
@@ -47,6 +49,9 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+
+    // console.log(result.data.allMarkdownRemark.edges)
+
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: `projects${node.fields.slug}`,

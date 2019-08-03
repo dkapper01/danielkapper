@@ -35,14 +35,14 @@ export default function BlogList() {
         return (
           <BlogListWrapper>
             <h1>
-              Reading material{" "}
+              My Blog{" "}
               <span role="img" aria-label="hammer">
                 🔥
               </span>
             </h1>
-            {posts.map(({ node }) => {
+            {posts.map(({ node }, index) => {
               return (
-                <div>
+                <div key={index}>
                   <Link
                     style={{ boxShadow: `none`, textDecoration: `underline` }}
                     to={`blog${node.fields.slug}`}
@@ -66,7 +66,7 @@ export default function BlogList() {
 
 const BlogListWrapper = styled.div`
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
   padding: 0 60px;
   border-top: 1px solid lightgray;
   h1 {
