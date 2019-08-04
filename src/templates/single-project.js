@@ -22,6 +22,7 @@ class BlogPostTemplate extends React.Component {
     //   window.history.back()
     // }
     // console.log(location)
+    // console.log(post.frontmatter.picture.childImageSharp.fluid)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -32,11 +33,11 @@ class BlogPostTemplate extends React.Component {
           <Banner title={post.frontmatter.title} subtitle="" />
         </Header>
         <ProjectWrapper>
-          <Img
+          {/* <Img
             fluid={post.frontmatter.picture.childImageSharp.fluid}
             alt="project"
             style={{ marginBottom: "2.5rem" }}
-          />
+          /> */}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <a
             href={post.frontmatter.url}
