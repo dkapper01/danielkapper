@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 import Header from "../components/Header"
 import Banner from "../utils/Banner"
 import styled from "styled-components"
@@ -11,40 +11,41 @@ import Img from "gatsby-image"
 
 // import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
+class ProjectTemplate extends React.Component {
   render() {
     // const { location } = this.props
+    console.log(this.props.markdownRemark)
 
-    const post = this.props.data.markdownRemark
+    const project = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     // const { previous, next } = this.props.pageContext
     // function goBack() {
     //   window.history.back()
     // }
-    // console.log(location)
-    // console.log(post.frontmatter.picture.childImageSharp.fluid)
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          // description={post.frontmatter.description || post.excerpt}
-        />
+        {/* <SEO
+          title={project.frontmatter.title}
+          description={project.frontmatter.description || project.excerpt}
+        /> */}
         <Header>
-          <Banner title={post.frontmatter.title} subtitle="" />
+          <Banner title={project.frontmatter.title} subtitle="" />
         </Header>
         <ProjectWrapper>
-          {/* <Img
-            fluid={post.frontmatter.picture.childImageSharp.fluid}
+          <Img
+            fluid={project.frontmatter.picture.childImageSharp.fluid}
             alt="project"
             style={{ marginBottom: "2.5rem" }}
-          /> */}
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          />
+          <div dangerouslySetInnerHTML={{ __html: project.html }} />
           <a
-            href={post.frontmatter.url}
+            href={project.frontmatter.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button marginBottom="2rem">{post.frontmatter.title}.com →</Button>
+            <Button marginBottom="2rem">
+              {project.frontmatter.title}.com →
+            </Button>
           </a>
         </ProjectWrapper>
       </Layout>
@@ -52,7 +53,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default ProjectTemplate
 
 const ProjectWrapper = styled.div`
   margin: 0 auto;
@@ -63,7 +64,7 @@ const ProjectWrapper = styled.div`
 `
 
 export const pageQuery = graphql`
-  query BlogPostBySlugs($slug: String!) {
+  query ProjectSlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -79,7 +80,7 @@ export const pageQuery = graphql`
         url
         picture {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
