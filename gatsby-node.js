@@ -26,19 +26,20 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
+    // console.log(result.data.edges.node.fields)
 
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
 
-    posts.forEach((post, index) => {
+    result.data.allMarkdownRemark.edges.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
       // console.log(previous)
-      // console.log(next)
+      console.log(post)
       createPage({
         path: `blog${post.node.fields.slug}`,
-        component: blogPost,
-        context: { 
+        component: path.resolve(`./src/templates/blog-post.js`),
+        context: {
           slug: post.node.fields.slug,
           previous,
           next,
@@ -47,13 +48,15 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     // console.log(result.data.allMarkdownRemark.edges)
+    const projects = result.data.allMarkdownRemark.edges
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMarkdownRemark.edges.forEach(projects => {
+      console.log(projects)
       createPage({
-        path: `projects${node.fields.slug}`,
+        path: `projects${projects.node.fields.slug}`,
         component: path.resolve("./src/templates/single-project.js"),
         context: {
-          slug: node.fields.slug,
+          slug: projects.node.fields.slug,
         },
       })
     })

@@ -14,14 +14,16 @@ import Img from "gatsby-image"
 class ProjectTemplate extends React.Component {
   render() {
     // const { location } = this.props
-    console.log(this.props.markdownRemark)
 
     const project = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    console.log(project)
+
     // const { previous, next } = this.props.pageContext
     // function goBack() {
     //   window.history.back()
     // }
+    // console.log(project.frontmatter.image.childImageSharp.fluid)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         {/* <SEO
@@ -32,11 +34,11 @@ class ProjectTemplate extends React.Component {
           <Banner title={project.frontmatter.title} subtitle="" />
         </Header>
         <ProjectWrapper>
-          {/* <Img
-            fluid={project.frontmatter.picture.childImageSharp.fluid}
+          <Img
+            fluid={project.frontmatter.image.childImageSharp.fluid}
             alt="project"
             style={{ marginBottom: "2.5rem" }}
-          /> */}
+          />
           <div dangerouslySetInnerHTML={{ __html: project.html }} />
           <a
             href={project.frontmatter.url}
@@ -78,9 +80,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         url
-        picture {
+        image {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 500, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

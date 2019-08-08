@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
         <Projects />
         <ProjectsTwo />
         <ProjectThree />
-        <BlogList />
+        {/* <BlogList /> */}
         <Toolbox />
       </Layout>
     )
