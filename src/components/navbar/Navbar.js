@@ -6,9 +6,6 @@ import Resume from "../../../static/daniel_kapper_resume.pdf"
 const Navbar = () => {
   return (
     <NavbarWrapper>
-      {/* <Link to="/" style={{ margin: "10px" }}>
-        Blog
-      </Link> */}
       <a
         href="http://entrepreneuriallythinking.com/2017/07/26/4-4-local-entrepreneurs-riding-the-health-iot-wave/"
         target="_blank"
