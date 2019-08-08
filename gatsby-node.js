@@ -29,17 +29,16 @@ exports.createPages = ({ graphql, actions }) => {
 
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
-    console.log(posts.length)
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
       // console.log(previous)
-      console.log(next)
+      // console.log(next)
       createPage({
         path: `blog${post.node.fields.slug}`,
         component: blogPost,
-        context: {
+        context: { 
           slug: post.node.fields.slug,
           previous,
           next,

@@ -32,11 +32,11 @@ class ProjectTemplate extends React.Component {
           <Banner title={project.frontmatter.title} subtitle="" />
         </Header>
         <ProjectWrapper>
-          <Img
+          {/* <Img
             fluid={project.frontmatter.picture.childImageSharp.fluid}
             alt="project"
             style={{ marginBottom: "2.5rem" }}
-          />
+          /> */}
           <div dangerouslySetInnerHTML={{ __html: project.html }} />
           <a
             href={project.frontmatter.url}
