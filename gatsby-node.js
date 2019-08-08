@@ -25,12 +25,9 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
-
-    // console.log(result.data.allMarkdownRemark.edges)
     const projects = result.data.allMarkdownRemark.edges
 
     result.data.allMarkdownRemark.edges.forEach(projects => {
-      console.log(projects)
       createPage({
         path: `projects${projects.node.fields.slug}`,
         component: path.resolve("./src/templates/single-project.js"),

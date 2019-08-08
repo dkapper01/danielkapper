@@ -17,13 +17,11 @@ class ProjectTemplate extends React.Component {
 
     const project = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
-    console.log(project)
 
     // const { previous, next } = this.props.pageContext
     // function goBack() {
     //   window.history.back()
     // }
-    // console.log(project.frontmatter.image.childImageSharp.fluid)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         {/* <SEO
