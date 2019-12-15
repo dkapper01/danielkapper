@@ -2,7 +2,7 @@
 title: Kodluyoruz
 date: "2019-05-01T22:12:03.284Z"
 type: project
-url: https://kodluyoruz.netlify.com/
+url: https://matrix-one.netlify.com/
 picture: "./kodluyoruz.png"
 image: ./kodluyoruz.png
 ---
